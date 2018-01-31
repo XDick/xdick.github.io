@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[关于Android《第一行代码》学习整理（一）]]></title>
+    <url>%2F2018%2F01%2F31%2F2.%E5%85%B3%E4%BA%8EAndroid%E3%80%8A%E7%AC%AC%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81%E3%80%8B%E5%AD%A6%E4%B9%A0%E6%95%B4%E7%90%86%EF%BC%88%E4%B8%80%EF%BC%89%2F</url>
+    <content type="text"><![CDATA[关于为什么想写这些东西？ 大二上学期，自己主动接手了一个信管Android 的项目。当时脑子里有一些校园社交项目的想法而且寒假里跟着视频看了与安卓有关的java知识，并且之后撸了一遍郭霖大神的《第一行代码》，以为可以很轻松实现自己的想法了。于是在学校里一边跟着书本相关的章节，一边打代码。刚开始一些关于简单的控件的代码构建的还挺舒服：）。然而越到构建到后面越发现，自己还是我太年轻了。首先各种的代码语法都不是很扎实只知道是这么做了，但不知道为什么这么做，这当代码多了复杂后很容易搞乱。其次APP需要的数据除从本地获取外还得从服务器获取，对于服务器的一些知识我也是空白，因此我不得不停下了这个项目，领会到：人不能浮躁，确实该踏踏实实地沉下心来学习知识。因此，是时候把学到知识一一梳理一下。]]></content>
+      <categories>
+        <category>Android</category>
+      </categories>
+      <tags>
+        <tag>Android</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[自我介绍一下]]></title>
-    <url>%2F2018%2F01%2F30%2F%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D%E4%B8%80%E4%B8%8B%2F</url>
+    <url>%2F2018%2F01%2F30%2F1.%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D%E4%B8%80%E4%B8%8B%2F</url>
     <content type="text"><![CDATA[我是谢德锟 是女神韫的男人 : )]]></content>
       <categories>
         <category>生活</category>
