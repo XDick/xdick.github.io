@@ -79,20 +79,20 @@
 
 
 
-<meta name="description" content="关于为什么想写这些东西？　 　大二上学期，自己主动接手了一个信管Android 的项目。当时脑子里有一些校园社交项目">
+<meta name="description" content="关于为什么想写这些东西？　大二上学期，自己主动接手了一个信管Android 的项目。当时脑子里有一些校园社交项目">
 <meta name="keywords" content="Android">
 <meta property="og:type" content="article">
 <meta property="og:title" content="关于Android《第一行代码》学习整理（一）">
 <meta property="og:url" content="http://yoursite.com/2018/01/31/2.关于Android《第一行代码》学习整理（一）/index.html">
 <meta property="og:site_name" content="XDick&#39;s Batcave">
-<meta property="og:description" content="关于为什么想写这些东西？　 　大二上学期，自己主动接手了一个信管Android 的项目。当时脑子里有一些校园社交项目">
+<meta property="og:description" content="关于为什么想写这些东西？　大二上学期，自己主动接手了一个信管Android 的项目。当时脑子里有一些校园社交项目">
 <meta property="og:image" content="https://i.imgur.com/orVov6a.jpg">
 <meta property="og:image" content="https://i.imgur.com/dVRKcvF.png">
 <meta property="og:image" content="https://i.imgur.com/LBuHHji.png">
-<meta property="og:updated_time" content="2018-01-31T13:56:19.115Z">
+<meta property="og:updated_time" content="2018-01-31T14:18:26.879Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="关于Android《第一行代码》学习整理（一）">
-<meta name="twitter:description" content="关于为什么想写这些东西？　 　大二上学期，自己主动接手了一个信管Android 的项目。当时脑子里有一些校园社交项目">
+<meta name="twitter:description" content="关于为什么想写这些东西？　大二上学期，自己主动接手了一个信管Android 的项目。当时脑子里有一些校园社交项目">
 <meta name="twitter:image" content="https://i.imgur.com/orVov6a.jpg">
 
 
@@ -370,8 +370,7 @@
 
       
         <p><img src="https://i.imgur.com/orVov6a.jpg" alt=""></p>
-<h1 id="关于为什么想写这些东西？"><a href="#关于为什么想写这些东西？" class="headerlink" title="关于为什么想写这些东西？"></a>关于为什么想写这些东西？</h1><p>　</p>
-<font size="3"><br>　大二上学期，自己主动接手了一个信管Android 的项目。当时脑子里有一些校园社交项目<a id="more"></a>的想法而且寒假里跟着视频看了与安卓有关的java知识，并且之后撸了一遍郭霖大神的《第一行代码》，以为可以很轻松实现自己的想法了。于是在学校里一边跟着书本相关的章节，一边打代码。刚开始一些关于简单的控件的代码构建的还挺舒服：）。然而越到构建到后面越发现，自己还是我太年轻了。首先各种的代码语法都不是很扎实只知道是这么做了，但不知道为什么这么做，这当代码多了复杂后很容易搞乱。其次APP需要的数据除从本地获取外还得从服务器获取，对于服务器的一些知识我也是空白，因此我不得不停下了这个项目，领会到：人不能浮躁，确实该踏踏实实地沉下心来学习知识。因此，是时候把学到知识一一梳理一下。<br><br><br># 关于Android程序生成的文件的详解 #<br><br>##Project结构模式下的文件详解 ##<br><img src="https://i.imgur.com/dVRKcvF.png" alt=""><br><br><font size="5">1.<strong>.gradle</strong>和<strong>.idea</strong></font>
+<h1 id="关于为什么想写这些东西？"><a href="#关于为什么想写这些东西？" class="headerlink" title="关于为什么想写这些东西？"></a>关于为什么想写这些东西？</h1><font size="3"><br>　大二上学期，自己主动接手了一个信管Android 的项目。当时脑子里有一些校园社交项目<a id="more"></a>的想法而且寒假里跟着视频看了与安卓有关的java知识，并且之后撸了一遍郭霖大神的《第一行代码》，以为可以很轻松实现自己的想法了。于是在学校里一边跟着书本相关的章节，一边打代码。刚开始一些关于简单的控件的代码构建的还挺舒服：）。然而越到构建到后面越发现，自己还是我太年轻了。首先各种的代码语法都不是很扎实只知道是这么做了，但不知道为什么这么做，这当代码多了复杂后很容易搞乱。其次APP需要的数据除从本地获取外还得从服务器获取，对于服务器的一些知识我也是空白，因此我不得不停下了这个项目，领会到：人不能浮躁，确实该踏踏实实地沉下心来学习知识。因此，是时候把学到知识一一梳理一下。<font><br><br>———-<br><br># 关于Android程序生成的文件的详解<br><br>## 　一、Project结构模式下的文件详解<br><br><img src="https://i.imgur.com/dVRKcvF.png" alt=""><br><br><font size="5">1.<strong>.gradle</strong>和<strong>.idea</strong></font>
 
 <p>这两个目录下放置的都是Android Studio自动生成的一些文件，我们无需关心，也不要去手动改动他们</p>
 <font size="5">2.<strong>app</strong></font>
@@ -403,9 +402,9 @@
 <p>这个文件用于指定项目中所有引入的模块，用于MyApplication目前只有一个app模块，因此该文件中也就只入了app这一个模块，而且通常情况下模块的引入都是自动完成的需要我们手动去修改的时候很少</p>
 <p>　</p>
 <hr>
-<h2 id="app目录下的文件详解"><a href="#app目录下的文件详解" class="headerlink" title="app目录下的文件详解"></a>app目录下的文件详解</h2><p><img src="https://i.imgur.com/LBuHHji.png" alt=""></p>
+<h2 id="二、app目录下的文件详解"><a href="#二、app目录下的文件详解" class="headerlink" title="二、app目录下的文件详解"></a>二、app目录下的文件详解</h2><p><img src="https://i.imgur.com/LBuHHji.png" alt=""></p>
 <p>1.build</p>
-</font>
+</font></font>
       
     </div>
     
@@ -447,8 +446,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/01/30/1.自我介绍一下/" rel="next" title="自我介绍一下">
-                <i class="fa fa-chevron-left"></i> 自我介绍一下
+              <a href="/2018/01/31/3.关于Android《第一行代码》学习整理（二）/" rel="next" title="关于Android《第一行代码》学习整理（一）">
+                <i class="fa fa-chevron-left"></i> 关于Android《第一行代码》学习整理（一）
               </a>
             
           </div>
@@ -541,7 +540,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -612,7 +611,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#关于为什么想写这些东西？"><span class="nav-number">1.</span> <span class="nav-text">关于为什么想写这些东西？</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#app目录下的文件详解"><span class="nav-number">1.1.</span> <span class="nav-text">app目录下的文件详解</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#关于为什么想写这些东西？"><span class="nav-text">关于为什么想写这些东西？</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#二、app目录下的文件详解"><span class="nav-text">二、app目录下的文件详解</span></a></li></ol></li></ol></div>
             
 
           </div>
